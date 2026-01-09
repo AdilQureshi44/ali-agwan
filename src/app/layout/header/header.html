@@ -1,1 +1,22 @@
-<p>header works!</p>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a routerLink="/" (click)="closeMenu()">FinConsult</a>
+        </div>
+
+        <nav class="nav" [class.active]="isMenuOpen">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                (click)="closeMenu()">Home</a>
+            <a routerLink="/services" routerLinkActive="active" (click)="closeMenu()">Services</a>
+            <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a>
+            <a routerLink="/portfolio" routerLinkActive="active" (click)="closeMenu()">Portfolio</a>
+            <a routerLink="/contact" class="btn" (click)="closeMenu()">Contact</a>
+        </nav>
+
+        <div class="menu-toggle" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
