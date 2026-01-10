@@ -1,0 +1,122 @@
+.service-section {
+    text-align: center;
+    padding: 40px 20px 80px 20px;
+}
+
+.service-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.service-title span {
+    color: #E5AC18;
+}
+
+.service-sub-title {
+    color: #1F242E;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    width: 60%;
+    max-width: 700px;
+    margin: 10px auto 40px auto;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.custom-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon-container {
+    width: 50px;
+    height: 50px;
+    background-color: #fffbe6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-icon {
+    font-size: 24px;
+    color: #ffc107;
+    font-style: normal;
+}
+
+.card-title-service {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #1F242E;
+    margin: 0 0 10px 0;
+}
+
+.description {
+    color: #6c757d;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #343a40;
+    font-size: 0.95rem;
+}
+
+.bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #ffc107;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+    .service-title {
+        font-size: 36px;
+    }
+    .service-sub-title {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        padding: 0 5px; 
+        gap: 15px;
+    }
+    
+    .service-sub-title {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .service-title {
+        font-size: 28px;
+    }
+}
