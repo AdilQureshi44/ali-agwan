@@ -1,0 +1,36 @@
+.hero-section {
+    max-width: 1200px;
+    margin: 72px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container,
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.title-container {
+    display: block;
+}
+
+.hero-title {
+    font-size: 2.75rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.hero-sub-title {
+    font-size: 1.25rem;
+    margin-top: 12px;
+    line-height: 1.625;
+}
